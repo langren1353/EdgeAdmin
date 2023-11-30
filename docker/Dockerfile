@@ -1,15 +1,15 @@
-FROM --platform=linux/amd64 alpine:latest
+FROM --platform=linux/arm64 alpine:latest
 LABEL maintainer="goedge.cdn@gmail.com"
 ENV TZ "Asia/Shanghai"
 ENV VERSION 1.3.1
 ENV ROOT_DIR /usr/local/goedge
-ENV TAR_FILE edge-admin-linux-amd64-plus-v${VERSION}.zip
+ENV TAR_FILE edge-admin-linux-arm64-plus-v${VERSION}.zip
 
 # remote official repository
-ENV TAR_URL "https://dl.goedge.cn/edge/v${VERSION}/edge-admin-linux-amd64-plus-v${VERSION}.zip"
+ENV TAR_URL "https://dl.goedge.cn/edge/v${VERSION}/edge-admin-linux-arm64-plus-v${VERSION}.zip"
 
 # your local repository
-#ENV TAR_URL "http://192.168.2.61:8080/edge-admin-linux-amd64-plus-v${VERSION}.zip"
+#ENV TAR_URL "http://192.168.2.61:8080/edge-admin-linux-arm64-plus-v${VERSION}.zip"
 
 RUN apk add --no-cache tzdata
 
