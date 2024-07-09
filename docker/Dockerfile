@@ -1,7 +1,7 @@
 FROM --platform=linux/arm64 alpine:latest
 LABEL maintainer="goedge.cdn@gmail.com"
 ENV TZ "Asia/Shanghai"
-ENV VERSION 1.3.1
+ENV VERSION 1.4.0
 ENV ROOT_DIR /usr/local/goedge
 ENV TAR_FILE edge-admin-linux-arm64-plus-v${VERSION}.zip
 
